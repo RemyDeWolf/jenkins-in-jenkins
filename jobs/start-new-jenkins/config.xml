@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
   <description>Start another Jenkins instance using docker, within the current instance.</description>
@@ -14,9 +14,11 @@
   <builders>
     <hudson.tasks.Shell>
       <command>JENKINS_PORT=$((JENKINS_PORT+1))
+DOCKER_IMAGE=&quot;remydewolf/jenkins-in-jenkins&quot;
+
 echo $JENKINS_PORT
-echo "Starting new Jenkins server at http://localhost:$JENKINS_PORT"
-docker run -p $JENKINS_PORT:8080 -e JENKINS_PORT=$JENKINS_PORT --rm -v /var/run/docker.sock:/var/run/docker.sock --name jenkins-$JENKINS_PORT jenkins-in-jenkins</command>
+echo &quot;Starting new Jenkins server at http://localhost:$JENKINS_PORT&quot;
+docker run -p $JENKINS_PORT:8080 -e JENKINS_PORT=$JENKINS_PORT --rm -v /var/run/docker.sock:/var/run/docker.sock --name jenkins-$JENKINS_PORT $DOCKER_IMAGE</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
