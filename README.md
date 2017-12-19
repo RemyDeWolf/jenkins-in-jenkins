@@ -4,7 +4,7 @@ Start a Jenkins server from within itself using Docker.
 <img src="jenkins-recursive.png" alt="Jenkins in Jenkins logo"/>
 
 Have you ever heard of running Docker within Docker?
-Now, image you have a Jenkins container which can run Docker, would that image be able to start itself?
+Now, imagine you have a Jenkins container which can run Docker, would that image be able to start itself?
 
 <img src="jenkins-recursive-diagram.png" alt="Jenkins and Docker nested layers diagram"/>
 
