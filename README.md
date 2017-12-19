@@ -24,6 +24,8 @@ The Dockerfile extends Jenkins official image and installs docker from the Debia
 <img src="jenkins-host-diagram.png" alt="Jenkins Docker containers from the host perspective"/>
 
 # Resources
+- [Experiment: Start Jenkins servers recursively with Docker](https://medium.com/@remy.dewolf/experiment-start-jenkins-servers-recursively-with-docker-f16984a94284)
+- [jenkins-in-jenkins Docker Hub repository](https://hub.docker.com/r/remydewolf/jenkins-in-jenkins/)
 - [Docker in Docker! Official Image](https://hub.docker.com/_/docker/)
 - [About /var/run/docker.sock](https://medium.com/lucjuggery/about-var-run-docker-sock-3bfd276e12fd)
 - [Jenkins Docker in Docker (DinD) ](https://tripdubroot.com/jenkins-docker-in-docker-dind-2040cc90eeab)
