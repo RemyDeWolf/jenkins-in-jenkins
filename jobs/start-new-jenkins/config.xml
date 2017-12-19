@@ -16,7 +16,6 @@
       <command>JENKINS_PORT=$((JENKINS_PORT+1))
 DOCKER_IMAGE=&quot;remydewolf/jenkins-in-jenkins&quot;
 
-echo $JENKINS_PORT
 echo &quot;Starting new Jenkins server at http://localhost:$JENKINS_PORT&quot;
 docker run -p $JENKINS_PORT:8080 -e JENKINS_PORT=$JENKINS_PORT --rm -v /var/run/docker.sock:/var/run/docker.sock --name jenkins-$JENKINS_PORT $DOCKER_IMAGE</command>
     </hudson.tasks.Shell>
